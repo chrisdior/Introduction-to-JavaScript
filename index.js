@@ -81,7 +81,7 @@ function dogfeed(age, weight){
         }
     } else {
         if(age < .16){
-        console.log("give the puppy milk")
+        console.log("dog needs smaller portions")
       } else{
           if(age < .32){
               console.log(weight / 100 * 10);
@@ -94,7 +94,7 @@ function dogfeed(age, weight){
 
 }
 }
-dogfeed(1, 15)2
+dogfeed(1, 14)
 
 
 
