@@ -1,34 +1,53 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-
-
-
+let votingAge = 19
+if(votingAge > 18){
+    console.log(true);
+}else{
+    console.log(false);
+}
+console.log(votingAge)
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+var declared = "declared";
 
+var conditional = 4
 
+if(conditional === 4)
+    // declared = "declared change"
+
+// }
+// console.log(declared)
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
+var convertString = "1999";
 
 
+
+console.log(convertString)
+   
 
 
 
 //Task d: Write a function to multiply a*b 
 
-
-
+function multiply(a,b){
+    console.log(a*b)   
+}
+multiply(2,2)
 
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-
-
+function dogYears (age){
+    console.log(age*7)
+}
+dogYears(24)
 
 
 /************************************************************** Task 3 **************************************************************/
@@ -49,7 +68,33 @@
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+function dogfeed(age, weight){
+    if(age >= 1){
+        if(weight < 6){
+              console.log(weight / 100 *5);
+        } else if(weight < 11){
+              console.log(weight / 100 *4); 
+        } else if( weight < 16){
+              console.log(weight / 100 *3);
+        } else{
+              console.log(weight / 100 *2);
+        }
+    } else {
+        if(age < .16){
+        console.log("give the puppy milk")
+      } else{
+          if(age < .32){
+              console.log(weight / 100 * 10);
+          } else if(age < .581){
+              console.log(weight / 100 *5);
+          }else{
+              console.log(weight / 100 *4);
+          }
+      }
 
+}
+}
+dogfeed(1, 15)2
 
 
 
