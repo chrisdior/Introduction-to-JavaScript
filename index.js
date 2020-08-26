@@ -7,7 +7,7 @@ if(votingAge > 18){
 }else{
     console.log(false);
 }
-console.log(votingAge)
+//console.log(votingAge)
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 var declared = "declared";
@@ -27,7 +27,7 @@ var convertString = "1999";
 
 
 
-console.log(convertString)
+//console.log(convertString)
    
 
 
@@ -35,7 +35,7 @@ console.log(convertString)
 //Task d: Write a function to multiply a*b 
 
 function multiply(a,b){
-    console.log(a*b)   
+   // console.log(a*b)   
 }
 multiply(2,2)
 
@@ -45,7 +45,7 @@ multiply(2,2)
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
 function dogYears (age){
-    console.log(age*7)
+    //console.log(age*7)
 }
 dogYears(24)
 
@@ -94,7 +94,7 @@ function dogfeed(age, weight){
 
 }
 }
-dogfeed(1, 14)
+dogfeed(1, 15)
 
 
 
@@ -112,14 +112,19 @@ dogfeed(1, 14)
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
-
+function kilometersToMiles(kilometers){
+    console.log(kilometers * 0.621371)
+}
+kilometersToMiles(5)
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
+  //Help With this problem.
+function feetToCentimeters(feet){
+    console.log(feet * 30.48)
+}
 
-
+feetToCentimeters(4)
 
 
 /************************************************************** Task 6 **************************************************************/
@@ -128,7 +133,15 @@ dogfeed(1, 14)
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
 
-
+function annoyingSong(bottles){ // parameter
+    //    counter           condition     decrement/incremnet
+      for(let i = bottles;     i > 0    ;   i--     ){
+        console.log(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`)
+      }
+    }
+    annoyingSong(10); // argument
+    /* NOTE!! - It is important to understand what is going on, in other words,
+    the logic behind the code */
 
 
 /************************************************************** Task 7 **************************************************************/
@@ -139,8 +152,16 @@ dogfeed(1, 14)
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
-
+  function grades(percent){
+      if(percent < 90){
+          return("B");
+      }else if(percent< 80){
+          return("C")
+      }else if(percent < 70){
+          return("F")
+      }
+  }
+console.log(grades(86))
   
   
 
